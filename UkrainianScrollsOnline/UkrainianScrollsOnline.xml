@@ -1,0 +1,26 @@
+<GuiXml>
+	<Controls>
+		<TopLevelControl name="UkrainianScrollsOnlineUI" mouseEnabled="true" movable="true" drawLayer="DL_BACKGROUND" clampedToScreen="true" hidden="true">
+			<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="GuiRoot" offsetX="0" offsetY="7" />
+			<OnMouseUp>
+				UkrainianScrollsOnline_Selected()
+			</OnMouseUp>
+			<Controls>
+				<Texture name="$(parent)Bg" textureFile="EsoUI/Art/Performance/StatusMeterMunge.dds">
+					<Dimensions x="200" y="256"/>
+					<Anchor point="CENTER" relativeTo="$(parent)" relativePoint="CENTER"/>
+				</Texture>
+			</Controls>
+		</TopLevelControl>
+
+		<Button name="UkrainianScrollsOnline_FlagControl" virtual="true" mouseEnabled="true" text="">
+			<Dimensions x="32" y="32" />
+			<Controls>
+				<Texture name="$(parent)Texture" alpha=".7" >
+					<Dimensions x="32" y="32" />
+					<Anchor fill="$(parent)" point="CENTER" offsetX="0" offsetY="0" />
+				</Texture>
+			</Controls>
+		</Button>
+	</Controls>
+</GuiXml>
