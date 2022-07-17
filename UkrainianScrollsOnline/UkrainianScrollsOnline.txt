@@ -1,0 +1,9 @@
+## Title: Ukrainian Scrolls Online
+## Author: w2unemdhysend - Ukrainian Translation Team
+## APIVersion: 101034 101035
+## Version: 1.00
+## Description: Переклад ESO українською мовою
+
+backupfont_$(language).xml
+UkrainianScrollsOnline.lua
+UkrainianScrollsOnline.xml
