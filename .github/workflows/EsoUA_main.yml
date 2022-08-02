@@ -4,7 +4,7 @@ on:
   # Trigger the pipeline only in main branch.
   push:
     branches:
-      - 'workflow-test'
+      - 'main'
     paths:
       # Run the pipeline when only `.VERSION` file is modified.
       - '.VERSION'
