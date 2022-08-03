@@ -66,5 +66,6 @@ const uploadZip = async (el, filename) => {
   const browser = await puppeteer.launch();
   page = await browser.newPage();
   await page.goto('https://www.esoui.com/downloads/editfile.php?id=3437');
-  console.log(await getElementByAttribute('name', 'vb_login_username'));
+  console.log((await getElementByAttribute('name', 'vb_login_username')).toString());
+  await browser.close();
 })();
