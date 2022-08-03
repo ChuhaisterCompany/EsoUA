@@ -1,6 +1,6 @@
 local UkrainianScrollsOnline = {}
 UkrainianScrollsOnline.name  = "Ukrainian Scrolls Online"
-UkrainianScrollsOnline.version = "1.00"
+UkrainianScrollsOnline.version = "1.01"
 UkrainianScrollsOnline.settings = UkrainianScrollsOnline.defaults
 UkrainianScrollsOnline.langString = nil
 UkrainianScrollsOnline.positionning = false
@@ -18,7 +18,7 @@ UkrainianScrollsOnline.defaults = {
 
 local confirmDialog = {
     title = { text = zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24).." Ukrainian Scrolls Online "..zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24)},
-    mainText = { text = "Перша спроба стартувати проєкт — неофіційного українського перекладу для The Elder Scrolls Online." },
+    mainText = { text = "Проєкт — неофіційного українського перекладу для The Elder Scrolls Online." },
     buttons = {
         { text = SI_DIALOG_ACCEPT, callback = functionToCall},
     }
