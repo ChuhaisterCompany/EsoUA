@@ -1,11 +1,11 @@
 <GuiXml>
 	<Controls>
-		<TopLevelControl name="UkrainianScrollsOnlineUI" mouseEnabled="true" movable="true" drawLayer="DL_BACKGROUND" clampedToScreen="true" hidden="true">
+		<TopLevelControl name="UkrainianScrollsOnlineUI" mouseEnabled="true" movable="true" drawLayer="DL_BACKGROUND" clampedToScreen="false" hidden="true" level="40" layer="CONTROLS">
 			<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="GuiRoot" offsetX="0" offsetY="7" />
 			<OnMouseUp>
 				UkrainianScrollsOnline_Selected()
 			</OnMouseUp>
-			<Controls>
+			<Controls level="40" layer="CONTROLS">
 				<Texture name="$(parent)Bg" textureFile="EsoUI/Art/Performance/StatusMeterMunge.dds">
 					<Dimensions x="200" y="256"/>
 					<Anchor point="CENTER" relativeTo="$(parent)" relativePoint="CENTER"/>
