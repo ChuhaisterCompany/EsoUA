@@ -1,6 +1,6 @@
 # EsoUA
 
-**Проєкт української локалізації** — неофіційний Український переклад для The Elder Scrolls Online
+**Проєкт української локалізації** — неофіційний Український переклад для The Elder Scrolls Online  
 **Ukrainian Localization Project** — unofficial Ukrainian translation for The Elder Scrolls Online
 
 ## Опис / Description
