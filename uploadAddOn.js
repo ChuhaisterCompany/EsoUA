@@ -59,7 +59,5 @@ const uploadZip = async (el, filename) => {
 
   // await page.screenshot({ path: 'uploadAddOn.png', fullPage: true });
 
-  await page.waitForNavigation();
-
   await browser.close();
 })();
