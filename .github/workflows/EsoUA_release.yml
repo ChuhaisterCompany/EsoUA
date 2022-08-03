@@ -1,10 +1,10 @@
-name: EsoUA_main
+name: EsoUA_release
 
 on:
   # Trigger the pipeline only in main branch.
   push:
     branches:
-      - 'main'
+      - 'workflow-test'
     paths:
       # Run the pipeline when only `.VERSION` file is modified.
       - '.VERSION'
@@ -14,13 +14,9 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  merge-to-release-branch:
+  upload-addon:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: everlytic/branch-merge@1.1.2
-        with:
-          github_token: ${{ github.token }}
-          source_ref: ${{ github.ref }}
-          target_branch: 'release'
-          commit_message_template: '[Automated] Merged {source_ref} into target {target_branch}'
+      - run: npm i
+      - run: npm run uploadAddOn
