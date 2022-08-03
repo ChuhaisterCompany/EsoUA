@@ -21,5 +21,5 @@ jobs:
       - run: npm i
       - run: npm run uploadAddOn
         env:
-          ESOUI_PASSWORD_TEST: ${{ env.ESOUI_PASSWORD_TEST }}
-          ESOUI_USERNAME_TEST: ${{ env.ESOUI_USERNAME_TEST }}
+          ESOUI_PASSWORD_TEST: ${{ secrets.ESOUI_PASSWORD_TEST }}
+          ESOUI_USERNAME_TEST: ${{ secrets.ESOUI_USERNAME_TEST }}
