@@ -34,30 +34,31 @@ const uploadZip = async (el, filename) => {
 };
 
 (async () => {
-  const browser = await puppeteer.launch();
-  page = await browser.newPage();
+  console.log(process.env.ESOUA_VERSION)
+  // const browser = await puppeteer.launch();
+  // page = await browser.newPage();
 
-  await page.goto('https://www.esoui.com/downloads/editfile.php?id=3437');
+  // await page.goto('https://www.esoui.com/downloads/editfile.php?id=3437');
 
-  await fillInput(
-    await getElementByAttribute('name', 'vb_login_username'),
-    process.env.ESOUI_USERNAME,
-  );
-  await fillInput(
-    await getElementByAttribute('name', 'vb_login_password'),
-    process.env.ESOUI_PASSWORD,
-  );
-  await clickEl(await getElementByAttribute('name', 'cookieuser'));
-  await clickEl(await getElementByAttribute('type', 'submit'));
+  // await fillInput(
+  //   await getElementByAttribute('name', 'vb_login_username'),
+  //   process.env.ESOUI_USERNAME,
+  // );
+  // await fillInput(
+  //   await getElementByAttribute('name', 'vb_login_password'),
+  //   process.env.ESOUI_PASSWORD,
+  // );
+  // await clickEl(await getElementByAttribute('name', 'cookieuser'));
+  // await clickEl(await getElementByAttribute('type', 'submit'));
 
-  await page.waitForNavigation();
+  // await page.waitForNavigation();
 
-  await uploadZip(await getElementByAttribute('name', 'replacementfile'), process.env.ZIP_NAME);
-  await fillInput(await getElementByAttribute('name', 'version'), process.env.ESO_VERSION);
-  await clickEl(await getElementByAttribute('name', 'docertify'));
-  await clickEl(await getElementByAttribute('name', 'sbutton'));
+  // await uploadZip(await getElementByAttribute('name', 'replacementfile'), process.env.ZIP_NAME);
+  // await fillInput(await getElementByAttribute('name', 'version'), process.env.ESOUA_VERSION);
+  // await clickEl(await getElementByAttribute('name', 'docertify'));
+  // await clickEl(await getElementByAttribute('name', 'sbutton'));
 
-  // await page.screenshot({ path: 'uploadAddOn.png', fullPage: true });
+  // // await page.screenshot({ path: 'uploadAddOn.png', fullPage: true });
 
-  await browser.close();
+  // await browser.close();
 })();
