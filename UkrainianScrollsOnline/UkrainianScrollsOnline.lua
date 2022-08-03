@@ -1,7 +1,6 @@
 local UkrainianScrollsOnline = {}
 UkrainianScrollsOnline.name  = "Ukrainian Scrolls Online"
 UkrainianScrollsOnline.version = "1.01"
-UkrainianScrollsOnline.settings = UkrainianScrollsOnline.defaults
 UkrainianScrollsOnline.langString = nil
 UkrainianScrollsOnline.positionning = false
 UkrainianScrollsOnline.Flags = { "en", "ua", "ut"}
@@ -15,6 +14,7 @@ UkrainianScrollsOnline.defaults = {
 		["ut"]	= true,
 	}
 }
+UkrainianScrollsOnline.settings = UkrainianScrollsOnline.defaults
 
 local confirmDialog = {
     title = { text = zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24).." Ukrainian Scrolls Online "..zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24)},
@@ -66,7 +66,7 @@ function UkrainianScrollsOnline:RefreshUI()
 end
 
 function UkrainianScrollsOnline_Selected()
-	local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = UkrainianScrollsOnlineUI:GetSelected()
+	local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY, anchorConstrains = UkrainianScrollsOnlineUI:GetAnchor()
 	if isValidAnchor then
 		UkrainianScrollsOnline.settings.anchor = { point, relativePoint, offsetX, offsetY }
 	end
@@ -74,7 +74,7 @@ end
 
 function UkrainianScrollsOnline:OnInit(eventCode, addOnName)
 	UkrainianScrollsOnline.langString = GetCVar("language.2")
-	UkrainianScrollsOnline.settings = ZO_SavedVars:New(UkrainianScrollsOnline.name .. "_settings", 1, nil, UkrainianScrollsOnline.defaults)
+	UkrainianScrollsOnline.settings = ZO_SavedVars:NewAccountWide("UkrainianScrollsOnline_settings", 1, nil, UkrainianScrollsOnline.defaults)
 
 	for _, flagCode in pairs(UkrainianScrollsOnline.Flags) do
 		ZO_CreateStringId("SI_BINDING_NAME_"..string.upper(flagCode), string.upper(flagCode))
