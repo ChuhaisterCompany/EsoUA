@@ -1,6 +1,11 @@
 name: EsoUA_release
 
 on:
+  # Trigger this pipeline only after EsoUA_main pipeline finished successfully.
+  workflow_run:
+    workflows: ["EsoUA_main"]
+    types:
+      - completed
   # Trigger the pipeline only in release branch.
   push:
     branches:
