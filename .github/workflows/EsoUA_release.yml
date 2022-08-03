@@ -3,11 +3,11 @@ name: EsoUA_release
 on:
   # Trigger the pipeline only in release branch.
   push:
-    branches:
-      - 'workflow-test'
+    # branches:
+    #   - 'workflow-test'
     paths:
-      # Run the pipeline when only `.VERSION` file is modified.
-      - './package.json'
+      # Run the pipeline when only `package.json` file is modified.
+      - 'package.json'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
