@@ -34,7 +34,10 @@ const uploadZip = async (el, filename) => {
 };
 
 (async () => {
-  console.log(process.env.ESOUA_VERSION)
+  console.log(process.env.ESOUA_VERSION);
+  console.log(process.env.ZIP_NAME);
+  console.log(process.env.ESOUI_USERNAME);
+  console.log(process.env.ESOUI_PASSWORD);
   // const browser = await puppeteer.launch();
   // page = await browser.newPage();
 

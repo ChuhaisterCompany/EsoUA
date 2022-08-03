@@ -4,10 +4,10 @@ on:
   # Trigger the pipeline only in release branch.
   push:
     branches:
-      - 'release'
+      - 'workflow-test'
     paths:
       # Run the pipeline when only `.VERSION` file is modified.
-      - '.VERSION'
+      - './package.json'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
