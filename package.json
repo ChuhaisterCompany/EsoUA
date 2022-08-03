@@ -1,0 +1,25 @@
+{
+  "name": "esoua",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/w2unemdhysend/EsoUA.git"
+  },
+  "author": "w2unemdhysend",
+  "contributors": [
+    "ohexus"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/w2unemdhysend/EsoUA/issues"
+  },
+  "homepage": "https://github.com/w2unemdhysend/EsoUA#readme",
+  "scripts": {
+    "uploadAddOn": "sh upload-addon.sh"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "puppeteer": "^15.5.0"
+  }
+}
