@@ -4,7 +4,7 @@ on:
   # Trigger the pipeline only in release branch.
   push:
     branches:
-      - 'workflow-test'
+      - 'release'
     paths:
       # Run the pipeline when only `package.json` file is modified.
       - 'package.json'
@@ -21,5 +21,5 @@ jobs:
       - run: npm i
       - run: npm run uploadAddOn
         env:
-          ESOUI_PASSWORD_TEST: ${{ secrets.ESOUI_PASSWORD_TEST }}
-          ESOUI_USERNAME_TEST: ${{ secrets.ESOUI_USERNAME_TEST }}
+          ESOUI_PASSWORD: ${{ secrets.ESOUI_PASSWORD }}
+          ESOUI_USERNAME: ${{ secrets.ESOUI_USERNAME }}
