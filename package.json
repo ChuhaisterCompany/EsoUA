@@ -4,7 +4,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/w2unemdhysend/EsoUA.git"
+    "url": "git+https://github.com/ChuhaisterCompany/EsoUA.git"
   },
   "author": "w2unemdhysend",
   "contributors": [
@@ -12,9 +12,9 @@
   ],
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/w2unemdhysend/EsoUA/issues"
+    "url": "https://github.com/ChuhaisterCompany/EsoUA/issues"
   },
-  "homepage": "https://github.com/w2unemdhysend/EsoUA#readme",
+  "homepage": "https://github.com/ChuhaisterCompany/EsoUA#readme",
   "scripts": {
     "uploadAddOn": "sh upload-addon.sh"
   },
