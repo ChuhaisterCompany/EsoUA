@@ -2,7 +2,7 @@ name: EsoUA_common
 
 on:
   # Trigger the pipeline only in every branch except main and release.
-  push:
+  pull_request:
     branches-ignore:
       - 'main'
       - 'release'
