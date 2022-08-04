@@ -6,8 +6,8 @@ on:
     branches:
       - 'main'
     paths:
-      # Run the pipeline when only `package.json` file is modified.
-      - 'package.json'
+      # Run the pipeline when only `UkrainianScrollsOnline.txt` file is modified.
+      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
