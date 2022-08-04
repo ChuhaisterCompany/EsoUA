@@ -31,4 +31,6 @@ jobs:
       - if:
           steps.verify_changed_files.outputs.lua == 'false' ||
           steps.verify_changed_files.outputs.txt == 'false'
-        run: exit 1
+        run: |
+          echo "Both files `UkrainianScrollsOnline.lua` and `UkrainianScrollsOnline.txt` should be modified"
+          exit 1
