@@ -2,17 +2,17 @@ name: EsoUA_release
 
 on:
   # # Trigger this pipeline only after EsoUA_main pipeline finished successfully.
-  # workflow_run:
-  #   workflows: ['EsoUA_main']
-  #   types:
-  #     - completed
+  workflow_run:
+    workflows: ['EsoUA_main']
+    types:
+      - completed
   # Trigger the pipeline only in release branch.
   push:
     branches:
-      - 'refactor/upload-addon-script'
-    # paths:
-    #   # Run the pipeline when only `package.json` file is modified.
-    #   - 'package.json'
+      - 'release'
+    paths:
+      # Run the pipeline when only `UkrainianScrollsOnline.txt` file is modified.
+      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
