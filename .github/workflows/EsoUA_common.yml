@@ -22,5 +22,7 @@ jobs:
         id: verify_changed_files
         with:
           paths: ^UkrainianScrollsOnline.lua ^UkrainianScrollsOnline.txt
+      - if: steps.changed.outputs.matched == 'true'
+        run: exit 0
       - if: steps.changed.outputs.matched == 'false'
         run: exit 1
