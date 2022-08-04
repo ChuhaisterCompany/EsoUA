@@ -26,10 +26,13 @@ jobs:
           files: |
             **/UkrainianScrollsOnline.lua
             **/UkrainianScrollsOnline.txt
-      - if: |
-          !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.lua')
-          || !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.txt')
-        run: |
-          echo "Both UkrainianScrollsOnline.lua and UkrainianScrollsOnline.txt should be changed!"
+      # - if: |
+      #     !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.lua')
+      #     || !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.txt')
+      #   run: |
+      #     echo "Both UkrainianScrollsOnline.lua and UkrainianScrollsOnline.txt should be changed!"
+      #     echo "${{ steps.verify_changed_files.outputs.changed_files }}"
+      #     exit 1
+      - run: |
           echo "${{ steps.verify_changed_files.outputs.changed_files }}"
           exit 1
