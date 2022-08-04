@@ -5,9 +5,8 @@ ZIP_NAME=EsoUA$VERSION.zip
 
 # git archive --output=./$ZIP_NAME --format=zip HEAD EsoUI gamedata UkrainianScrollsOnline
 
-cd
-
-ls -a
+BASEDIR=$(dirname "$0")
+echo "$BASEDIR"
 
 # curl -X POST -H "x-api-token:$ESOUI_API_TOKEN" \
 #     -F id=$ID -F version=$VERSION -F compatible=8.0.0 -F updatefile=@/$ZIP_NAME \
