@@ -3,6 +3,9 @@ name: EsoUA_common
 on:
   # Trigger the pipeline only in every branch except main and release.
   push:
+    branches-ignore:
+      - 'main'
+      - 'release'
     # paths:
     #   # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` files are modified.
     #   - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
@@ -21,8 +24,8 @@ jobs:
         id: verify_changed_files
         with:
           files: |
-            UkrainianScrollsOnline/UkrainianScrollsOnline.lua
-            UkrainianScrollsOnline/UkrainianScrollsOnline.txt
+            UkrainianScrollsOnline.lua
+            UkrainianScrollsOnline.txt
       - if: |
           !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.lua')
           || !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.txt')
