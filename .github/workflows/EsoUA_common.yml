@@ -24,8 +24,8 @@ jobs:
         id: verify_changed_files
         with:
           files: |
-            UkrainianScrollsOnline.lua
-            UkrainianScrollsOnline.txt
+            **/UkrainianScrollsOnline.lua
+            **/UkrainianScrollsOnline.txt
       - if: |
           !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.lua')
           || !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.txt')
