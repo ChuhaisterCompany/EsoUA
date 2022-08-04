@@ -6,9 +6,9 @@ on:
     branches:
       - 'main'
     paths:
-      - 'EsoUI'
-      - 'gamedata'
-      - 'UkrainianScrollsOnline'
+      - 'EsoUI/**'
+      - 'gamedata/**'
+      - 'UkrainianScrollsOnline/**'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
