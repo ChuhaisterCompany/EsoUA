@@ -3,6 +3,7 @@
 ## APIVersion: 101034 101035
 ## Version: 1.01
 ## Description: Проєкт — неофіційного Українського перекладу для The Elder Scrolls Online
+## SavedVariables: UkrainianScrollsOnline_settings
 
 backupfont_$(language).xml
 UkrainianScrollsOnline.lua
