@@ -27,5 +27,5 @@ jobs:
               - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
             txt:
               - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
-      - if: steps.changes.outputs.lua == 'true' && steps.changes.outputs.txt == 'true'
+      - if: steps.verify_changed_files.outputs.lua == 'true' && steps.verify_changed_files.outputs.txt == 'true'
         run: echo Matched
