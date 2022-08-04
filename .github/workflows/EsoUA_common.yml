@@ -3,9 +3,6 @@ name: EsoUA_common
 on:
   # Trigger the pipeline only in every branch except main and release.
   pull_request:
-    branches-ignore:
-      - 'main'
-      - 'release'
     # paths:
     #   # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` files are modified.
     #   - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
