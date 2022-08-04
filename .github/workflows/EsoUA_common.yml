@@ -29,8 +29,7 @@ jobs:
       - if: |
           !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.lua')
           || !contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.txt')
-        run:
+        run: |
           echo "Both UkrainianScrollsOnline.lua and UkrainianScrollsOnline.txt should be changed!"
-        run:
           echo "${{ steps.verify_changed_files.outputs.changed_files }}"
-        run: exit 1
+          exit 1
