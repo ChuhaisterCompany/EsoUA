@@ -1,18 +1,18 @@
 name: EsoUA_release
 
 on:
-  # Trigger this pipeline only after EsoUA_main pipeline finished successfully.
-  workflow_run:
-    workflows: ["EsoUA_main"]
-    types:
-      - completed
+  # # Trigger this pipeline only after EsoUA_main pipeline finished successfully.
+  # workflow_run:
+  #   workflows: ['EsoUA_main']
+  #   types:
+  #     - completed
   # Trigger the pipeline only in release branch.
   push:
     branches:
-      - 'release'
-    paths:
-      # Run the pipeline when only `package.json` file is modified.
-      - 'package.json'
+      - 'refactor/upload-addon-script'
+    # paths:
+    #   # Run the pipeline when only `package.json` file is modified.
+    #   - 'package.json'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,8 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm i
-      - run: npm run uploadAddOn
+      - run: sh upload-addon.sh
         env:
+          ESOUI_API_TOKEN: ${{ secrets.ESOUI_API_TOKEN }}
           ESOUI_PASSWORD: ${{ secrets.ESOUI_PASSWORD }}
           ESOUI_USERNAME: ${{ secrets.ESOUI_USERNAME }}
