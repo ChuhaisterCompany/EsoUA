@@ -2,14 +2,13 @@ name: EsoUA_common
 
 on:
   # Trigger the pipeline only in every branch except main and release.
-  push:
-    branches-ignore:
-      - 'main'
-      - 'release'
-    paths:
-      # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` files are modified.
-      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
-      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
+  branches-ignore:
+    - 'main'
+    - 'release'
+  paths:
+    # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` files are modified.
+    - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
+    - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
