@@ -6,7 +6,8 @@ on:
     branches-ignore:
       - 'main'
       - 'release'
-    # paths:
+    paths-ignore:
+      - '**.md'
     #   # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` files are modified.
     #   - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
     #   - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
