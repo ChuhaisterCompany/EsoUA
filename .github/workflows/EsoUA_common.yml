@@ -19,8 +19,13 @@ jobs:
     env:
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
-      - uses: foodee/pr-includes-file-change@master
+      - uses: dorny/paths-filter@v2
         id: verify_changed_files
         with:
-          paths: ^UkrainianScrollsOnline.lua ^UkrainianScrollsOnline.txt
-      - run: echo ${{ steps.verify_changed_files.outputs.matched }}
+          filters: |
+            lua:
+              - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
+            txt:
+              - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
+      - if: steps.changes.outputs.lua == 'true' && steps.changes.outputs.txt == 'true'
+        run: echo Matched
