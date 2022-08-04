@@ -33,4 +33,4 @@ jobs:
           echo "Both UkrainianScrollsOnline.lua and UkrainianScrollsOnline.txt should be changed!"
         run:
           echo "${{ steps.verify_changed_files.outputs.changed_files }}"
-      - run: exit 1
+        run: exit 1
