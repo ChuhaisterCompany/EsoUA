@@ -1,9 +1,9 @@
 #!/bin/bash
-ESOUA_VERSION=$(node -p "require('./package.json').version")
-ZIP_NAME=EsoUA_v$ESOUA_VERSION.zip
-
-rm $ZIP_NAME
+VERSION=$(cat UkrainianScrollsOnline/UkrainianScrollsOnline.txt | grep "## Version: [0-9\.]*" | cut -d \  -f3)
+ZIP_NAME=EsoUA$VERSION.zip
 
 git archive --output=./$ZIP_NAME --format=zip HEAD EsoUI gamedata UkrainianScrollsOnline
 
-ESOUA_VERSION=$ESOUA_VERSION ZIP_NAME=$ZIP_NAME node uploadAddOn.js
+curl -X POST -H "x-api-token:$ESOUI_API_TOKEN" \
+    -F id=$ESOUI_ID -F version=$VERSION -F compatible=8.0.0 -F updatefile=@/home/runner/work/EsoUA/EsoUA/$ZIP_NAME \
+    https://api.esoui.com/addons/update
