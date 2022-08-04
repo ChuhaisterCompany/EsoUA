@@ -17,6 +17,8 @@ on:
 jobs:
   verify-changed-files:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
       - uses: foodee/pr-includes-file-change@master
         id: verify_changed_files
