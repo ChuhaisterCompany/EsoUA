@@ -26,3 +26,4 @@ jobs:
       - run: sh upload-addon.sh
         env:
           ESOUI_API_TOKEN: ${{ secrets.ESOUI_API_TOKEN }}
+          ESOUI_ID: ${{ secrets.ESOUI_ID }}
