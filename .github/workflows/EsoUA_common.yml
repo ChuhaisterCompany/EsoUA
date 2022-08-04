@@ -1,0 +1,35 @@
+name: EsoUA_common
+
+on:
+  # Trigger the pipeline only in every branch except main and release.
+  push:
+    branches-ignore:
+      - 'main'
+      - 'release'
+    paths:
+      # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` files are modified.
+      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
+      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  verify-changed-files:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v10.1
+        id: verify_changed_files
+        with:
+          files:
+            - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
+            - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
+      - if:
+          contains(steps.verify_changed_files.outputs.changed_files, 'UkrainianScrollsOnline.lua')
+          && contains(steps.verify_changed_files.outputs.changed_files,
+          'UkrainianScrollsOnline.txt')
+        run:
+          echo "Both UkrainianScrollsOnline.lua and UkrainianScrollsOnline.txt should be changed!"
+      - run: exit 1
