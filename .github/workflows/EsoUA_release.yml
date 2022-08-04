@@ -11,7 +11,8 @@ on:
     branches:
       - 'release'
     paths:
-      # Run the pipeline when only `UkrainianScrollsOnline.txt` file is modified.
+      # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` file is modified.
+      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
       - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
 
   # Allows you to run this workflow manually from the Actions tab

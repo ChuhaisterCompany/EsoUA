@@ -6,7 +6,8 @@ on:
     branches:
       - 'main'
     paths:
-      # Run the pipeline when only `UkrainianScrollsOnline.txt` file is modified.
+      # Run the pipeline when only `UkrainianScrollsOnline.(lua|txt)` file is modified.
+      - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
       - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
 
   # Allows you to run this workflow manually from the Actions tab
@@ -17,7 +18,7 @@ jobs:
   merge-to-release-branch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: everlytic/branch-merge@1.1.2
         with:
           github_token: ${{ github.token }}
