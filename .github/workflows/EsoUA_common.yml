@@ -20,8 +20,7 @@ jobs:
   verify-changed-files:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify Changed files
-        uses: tj-actions/verify-changed-files@v10.1
+      - uses: trilom/file-changes-action@v1.2.3
         id: verify_changed_files
         with:
           files: |
@@ -35,5 +34,5 @@ jobs:
       #     echo "${{ steps.verify_changed_files.outputs.changed_files }}"
       #     exit 1
       - run: |
-          echo "${{ steps.verify_changed_files.outputs.changed_files }}"
+          echo "${{ steps.verify_changed_files.outputs.files_modified }}"
           exit 1
