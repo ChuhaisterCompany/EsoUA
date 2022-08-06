@@ -1,0 +1,34 @@
+name: EsoUA_common
+
+on:
+  # Trigger the pipeline only in every branch except main and release.
+  pull_request:
+    branches:
+      - 'main'
+    paths:
+      - 'EsoUI/**'
+      - 'gamedata/**'
+      - 'UkrainianScrollsOnline/**'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  verify-changed-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dorny/paths-filter@v2
+        id: verify_changed_files
+        with:
+          filters: |
+            lua:
+              - 'UkrainianScrollsOnline/UkrainianScrollsOnline.lua'
+            txt:
+              - 'UkrainianScrollsOnline/UkrainianScrollsOnline.txt'
+      - if:
+          steps.verify_changed_files.outputs.lua == 'false' ||
+          steps.verify_changed_files.outputs.txt == 'false'
+        run: |
+          echo "Both files `UkrainianScrollsOnline.lua` and `UkrainianScrollsOnline.txt` should be modified"
+          exit 1
