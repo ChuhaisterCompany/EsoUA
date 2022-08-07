@@ -3,6 +3,9 @@
 **Проєкт української локалізації** — неофіційний Український переклад для The Elder Scrolls Online  
 **Ukrainian Localization Project** — unofficial Ukrainian translation for The Elder Scrolls Online
 
+## Завантажити / Download
+Add-On can be downloaded [HERE](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)
+
 ## Опис / Description
 
 Щиро вас всіх вітаю, любі друзі! В першу чергу, ідея полягала у тому, що безліч розробників ігор не
