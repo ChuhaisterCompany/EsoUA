@@ -1,6 +1,6 @@
 local UkrainianScrollsOnline = {}
 UkrainianScrollsOnline.name  = "Ukrainian Scrolls Online"
-UkrainianScrollsOnline.version = "1.11"
+UkrainianScrollsOnline.version = "1.12"
 UkrainianScrollsOnline.langString = nil
 UkrainianScrollsOnline.positionning = false
 UkrainianScrollsOnline.Flags = { "en", "ua", "ut"}
