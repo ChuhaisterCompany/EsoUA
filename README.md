@@ -4,7 +4,7 @@
 **Ukrainian Localization Project** — unofficial Ukrainian translation for The Elder Scrolls Online
 
 ## Завантажити / Download
-Add-On can be downloaded [HERE](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)
+Add-On can be downloaded **[HERE](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)**
 
 ## Опис / Description
 
