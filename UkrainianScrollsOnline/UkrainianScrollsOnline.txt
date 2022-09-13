@@ -1,8 +1,8 @@
 ## Title: Ukrainian Scrolls Online
 ## Author: w2unemdhysend - Ukrainian Translation Team
 ## APIVersion: 101035
-## Version: 1.23
-## AddOnVersion: 123
+## Version: 1.24
+## AddOnVersion: 124
 ## Description: Проєкт — неофіційного Українського перекладу для The Elder Scrolls Online
 ## SavedVariables: UkrainianScrollsOnline_settings
 
