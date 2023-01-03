@@ -1,9 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const KEY_PATTERN = /(\{?\{?(?<key>\d+-\d+-\d+):?\}?\}?)/;
+const KEY_PATTERN = /(\{?\{?(?<key>\d+-\d+-\d+):?\}?\}?) ?(?<value>.+)/;
 const FILE_PATH = 'update-36/ut.lang.txt';
 const OUTPUT_DIR = 'ids';
+
+// Use this function if you need only key
+// const getOutputStr = (key, value) => key;
+const getOutputStr = (key, value) => `${key} ${value}`;
 
 if (!fs.existsSync(path.resolve(__dirname, OUTPUT_DIR))) {
   fs.mkdirSync(path.resolve(__dirname, OUTPUT_DIR));
@@ -21,7 +25,7 @@ const generateIdsObject = (data) =>
       return keys;
     }
 
-    const { key } = groups;
+    const { key, value } = groups;
 
     const baseId = key.split('-')[0];
 
@@ -29,7 +33,7 @@ const generateIdsObject = (data) =>
       keys[baseId] = [];
     }
 
-    keys[baseId].push(key);
+    keys[baseId].push(getOutputStr(key, value));
 
     return keys;
   }, {});
