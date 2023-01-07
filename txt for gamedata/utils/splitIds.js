@@ -1,16 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const KEY_PATTERN = /(\{?\{?(?<key>\d+-\d+-\d+):?\}?\}?) ?(?<value>.+)/;
-const FILE_PATH = 'update-36/ut.lang.txt';
-const OUTPUT_DIR = 'ids';
+const { BASE_DIR, CSV_OUTPUT_DIR, FILE_PATH, KEY_PATTERN, TXT_OUTPUT_DIR } = require('./consts');
+const generateTxtFiles = require('./generateTxtFiles');
 
-// Use this function if you need only key
-// const getOutputStr = (key, value) => key;
-const getOutputStr = (key, value) => `${key} ${value}`;
+const OUTPUT_DIR = TXT_OUTPUT_DIR;
 
-if (!fs.existsSync(path.resolve(__dirname, OUTPUT_DIR))) {
-  fs.mkdirSync(path.resolve(__dirname, OUTPUT_DIR));
+if (!fs.existsSync(path.resolve(BASE_DIR, OUTPUT_DIR))) {
+  fs.mkdirSync(path.resolve(BASE_DIR, OUTPUT_DIR));
 }
 
 const generateIdsObject = (data) =>
@@ -33,27 +30,12 @@ const generateIdsObject = (data) =>
       keys[baseId] = [];
     }
 
-    keys[baseId].push(getOutputStr(key, value));
+    keys[baseId].push([key, value]);
 
     return keys;
   }, {});
 
-const generateTxtFiles = (ids) => {
-  Object.entries(ids).forEach(([baseId, idArr]) => {
-    fs.writeFile(
-      path.resolve(__dirname, OUTPUT_DIR, `${baseId}.txt`),
-      idArr.join('\r\n'),
-      (err) => {
-        if (err) {
-          console.error(err.message);
-          return;
-        }
-      },
-    );
-  });
-};
-
-fs.readFile(path.resolve(__dirname, FILE_PATH), { encoding: 'utf8' }, (err, data) => {
+fs.readFile(path.resolve(BASE_DIR, FILE_PATH), { encoding: 'utf8' }, (err, data) => {
   if (err) {
     console.error(err.message);
     return;
