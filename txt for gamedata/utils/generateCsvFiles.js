@@ -3,7 +3,9 @@ const path = require('path');
 
 const { BASE_DIR, CSV_OUTPUT_DIR } = require('./consts');
 
-const getOutputStr = ([key, value]) => `"${key}","${value}",""`;
+const escapeChars = (str) => str.replaceAll('"', '""').replaceAll(',', '",');
+
+const getOutputStr = ([key, value]) => `"${key}","${escapeChars(value)}",""`;
 
 const getCsvTable = (entries) => `"Location","Source","Target"
 ${entries.map(getOutputStr).join('\r\n')}`;
