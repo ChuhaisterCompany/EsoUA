@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { BASE_DIR, CSV_OUTPUT_DIR, FILE_PATH, KEY_PATTERN, TXT_OUTPUT_DIR } = require('./consts');
-const generateCsvFiles = require('./generateCsvFiles');
+const { generateCsvFiles } = require('./csv');
 const generateTxtFiles = require('./generateTxtFiles');
 
 // Please use only one of the next pieces of code:
