@@ -2,13 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const { BASE_DIR, CSV_OUTPUT_DIR } = require('./consts');
-
-const escapeChars = (str) => str.replaceAll('"', '""').replaceAll(',', '",');
-
-const getOutputStr = ([key, value]) => `"${key}","${escapeChars(value)}",""`;
-
-const getCsvTable = (entries) => `"Location","Source","Target"
-${entries.map(getOutputStr).join('\r\n')}`;
+const { getCsvTable } = require('./csv');
 
 const generateCsvFiles = (ids) => {
   Object.entries(ids).forEach(([baseId, entries]) => {
