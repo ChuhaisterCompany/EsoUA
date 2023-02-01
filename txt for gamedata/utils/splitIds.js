@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { BASE_DIR, CSV_OUTPUT_DIR, FILE_PATH, KEY_PATTERN, TXT_OUTPUT_DIR } = require('./consts');
+const { BASE_DIR, CSV, FILE_PATH, TXT } = require('./consts');
 const { generateCsvFiles } = require('./csv');
 const generateTxtFiles = require('./generateTxtFiles');
 
@@ -9,14 +9,14 @@ const generateTxtFiles = require('./generateTxtFiles');
 // 1. for CSV files
 // 2. for TXT files
 
-const OUTPUT_DIR = CSV_OUTPUT_DIR;
+const { keyPattern, outputDir } = CSV;
 const generateFiles = generateCsvFiles;
 
-// const OUTPUT_DIR = TXT_OUTPUT_DIR;
+// const { keyPattern, outputDir } = TXT;
 // const generateFiles = generateTxtFiles;
 
-if (!fs.existsSync(path.resolve(BASE_DIR, OUTPUT_DIR))) {
-  fs.mkdirSync(path.resolve(BASE_DIR, OUTPUT_DIR));
+if (!fs.existsSync(path.resolve(BASE_DIR, outputDir))) {
+  fs.mkdirSync(path.resolve(BASE_DIR, outputDir));
 }
 
 const generateIdsObject = (data) =>
@@ -25,7 +25,7 @@ const generateIdsObject = (data) =>
       return keys;
     }
 
-    const groups = line.match(KEY_PATTERN)?.groups;
+    const groups = line.match(keyPattern)?.groups;
 
     if (!groups) {
       return keys;
