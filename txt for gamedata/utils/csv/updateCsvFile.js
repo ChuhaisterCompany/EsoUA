@@ -1,9 +1,12 @@
 const fs = require('fs');
 const path = require('path');
 
+const { CSV } = require('../consts');
 const getCsvTable = require('./getCsvTable');
 
 const FILE_PATH = path.resolve(__dirname, '../../csv', 'en.lang.csv');
+
+console.log(FILE_PATH);
 
 fs.readFile(FILE_PATH, { encoding: 'utf8' }, (err, data) => {
   if (err) {
@@ -16,7 +19,13 @@ fs.readFile(FILE_PATH, { encoding: 'utf8' }, (err, data) => {
       return keys;
     }
 
-    const [key, value] = line.split(',');
+    const groups = line.match(CSV.keyPattern)?.groups;
+
+    if (!groups) {
+      return keys;
+    }
+
+    const { key, value } = groups;
 
     keys[key] = value;
 
