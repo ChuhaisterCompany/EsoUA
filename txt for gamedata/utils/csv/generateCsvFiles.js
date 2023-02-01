@@ -1,13 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const { BASE_DIR, CSV_OUTPUT_DIR } = require('./consts');
-const { getCsvTable } = require('./csv');
+const { BASE_DIR, CSV } = require('../consts');
+const getCsvTable = require('./getCsvTable');
 
 const generateCsvFiles = (ids) => {
   Object.entries(ids).forEach(([baseId, entries]) => {
     fs.writeFile(
-      path.resolve(BASE_DIR, CSV_OUTPUT_DIR, `${baseId}.csv`),
+      path.resolve(BASE_DIR, CSV.outputDir, `${baseId}.csv`),
       getCsvTable(entries),
       (err) => {
         if (err) {
