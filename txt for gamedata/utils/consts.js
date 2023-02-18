@@ -6,7 +6,7 @@ const BASE_DIR = path.resolve(__dirname, '..');
 const FILE_PATH = path.resolve(__dirname, '../csv/en.lang.csv');
 
 const CSV = {
-  keyPattern: /(?<key>\d+-\d+-\d+)"(,|;)"(?<value>\w+)/,
+  keyPattern: /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*()%!]|(""))+)"/,
   outputDir: 'csv_ids',
 };
 
