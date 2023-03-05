@@ -5,11 +5,14 @@ const BASE_DIR = path.resolve(__dirname, '..');
 // const FILE_PATH = path.resolve(BASE_DIR, '../update-36/ut.lang.txt');
 const FILE_PATH = path.resolve(__dirname, '../csv/en.lang.csv');
 
-const keyPatternHack = /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*\-()%!"])+)(","str_end")/
+const BASE_PATTERN = /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*\-()%!"])*?)"/;
+// const PATTERN_FOR_UPDATE_0 =
+//   /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*\-()%!"])*?)"(,|;)""/;
+const PATTERN_FOR_UPDATE = new RegExp(BASE_PATTERN + '(,|;)""');
 
 const CSV = {
-  // keyPattern: /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*()%!]|(""))+)"/,
-  keyPattern: /^"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*\-()%!"])+?)(","")$/gm,
+  patternForUpdate: PATTERN_FOR_UPDATE,
+  keyPattern: BASE_PATTERN,
   outputDir: 'csv_ids',
 };
 

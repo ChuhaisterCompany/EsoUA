@@ -6,8 +6,6 @@ const getCsvTable = require('./getCsvTable');
 
 const FILE_PATH = path.resolve(__dirname, '../../csv', 'en.lang.csv');
 
-console.log(FILE_PATH);
-
 fs.readFile(FILE_PATH, { encoding: 'utf8' }, (err, data) => {
   if (err) {
     console.error(err.message);
@@ -19,7 +17,7 @@ fs.readFile(FILE_PATH, { encoding: 'utf8' }, (err, data) => {
       return keys;
     }
 
-    const groups = line.match(CSV.keyPattern)?.groups;
+    const groups = line.match(CSV.patternForUpdate)?.groups;
 
     if (!groups) {
       return keys;
@@ -27,7 +25,7 @@ fs.readFile(FILE_PATH, { encoding: 'utf8' }, (err, data) => {
 
     const { key, value } = groups;
 
-    keys[key] = value;
+    keys[key] = value || '';
 
     return keys;
   }, {});
