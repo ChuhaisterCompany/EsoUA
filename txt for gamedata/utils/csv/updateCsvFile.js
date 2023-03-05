@@ -1,13 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const { CSV } = require('../consts');
+const { CSV, CSV_DIR, CSV_INPUT_FILE_PATH, CSV_OUTPUT_FILE_PATH } = require('../consts');
 const getCsvTable = require('./getCsvTable');
 
-const FILE_PATH = path.resolve(__dirname, '../../csv', 'en.lang.csv');
-
 const writeCSV = (data) => {
-  fs.writeFile(FILE_PATH, data, (err) => {
+  fs.writeFile(path.resolve(CSV_DIR, CSV_OUTPUT_FILE_PATH), data, (err) => {
     if (err) {
       console.error(err.message);
       return;
@@ -15,7 +13,7 @@ const writeCSV = (data) => {
   });
 };
 
-fs.readFile(FILE_PATH, { encoding: 'utf8' }, (err, data) => {
+fs.readFile(path.resolve(CSV_DIR, CSV_INPUT_FILE_PATH), { encoding: 'utf8' }, (err, data) => {
   if (err) {
     console.error(err.message);
     return;

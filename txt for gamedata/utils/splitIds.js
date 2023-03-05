@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const { BASE_DIR, CSV, FILE_PATH, TXT } = require('./consts');
+const { BASE_DIR, CSV, CSV_OUTPUT_FILE_PATH, TXT, TXT_FILE_PATH } = require('./consts');
 const { generateCsvFiles } = require('./csv');
 const generateTxtFiles = require('./generateTxtFiles');
 
@@ -9,9 +9,11 @@ const generateTxtFiles = require('./generateTxtFiles');
 // 1. for CSV files
 // 2. for TXT files
 
+const FILE_PATH = CSV_OUTPUT_FILE_PATH;
 const { keyPattern, outputDir } = CSV;
 const generateFiles = generateCsvFiles;
 
+// const FILE_PATH = TXT_FILE_PATH;
 // const { keyPattern, outputDir } = TXT;
 // const generateFiles = generateTxtFiles;
 
