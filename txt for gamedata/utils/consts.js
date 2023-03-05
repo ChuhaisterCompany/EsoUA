@@ -6,15 +6,21 @@ const CSV_DIR = path.resolve(BASE_DIR, 'csv');
 const CSV_INPUT_FILE_PATH = path.resolve(CSV_DIR, 'en.lang.csv');
 const CSV_OUTPUT_FILE_PATH = path.resolve(CSV_DIR, 'new.en.lang.csv');
 
+const SEPARATOR_PATTERN = '(,|;)';
 const KEY_PATTERN = '\\d+-\\d+-\\d+';
 const VALUE_PATTERN = `([\\w\\W\\s\\n$&+,:;=?@#|'<>.^*\\-()%!"])*`;
 const VALUE_PATTERN_LAZY = `([\\w\\W\\s\\n$&+,:;=?@#|'<>.^*\\-()%!"])*?`;
 
-const generatePattern = (valueP, ...rest) =>
-  new RegExp(`"(?<key>${KEY_PATTERN})"(,|;)"(?<value>${valueP})${rest.join('')}`);
+const generatePattern = (valueP, ...rest) => {
+  const key = `(?<key>${KEY_PATTERN})`;
+  const value = `(?<value>${valueP})`;
+  const tail = rest.join('');
+
+  return new RegExp(`"${key}"${SEPARATOR_PATTERN}"${value}"${tail}`);
+};
 
 const CSV_KEY_PATTERN = generatePattern(VALUE_PATTERN);
-const CSV_PATTERN_FOR_UPDATE = generatePattern(VALUE_PATTERN_LAZY + '(,|;)""');
+const CSV_PATTERN_FOR_UPDATE = generatePattern(VALUE_PATTERN_LAZY, `${SEPARATOR_PATTERN}""`);
 
 const CSV = {
   patternForUpdate: CSV_PATTERN_FOR_UPDATE,
