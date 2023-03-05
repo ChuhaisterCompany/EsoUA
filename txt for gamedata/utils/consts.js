@@ -5,8 +5,11 @@ const BASE_DIR = path.resolve(__dirname, '..');
 // const FILE_PATH = path.resolve(BASE_DIR, '../update-36/ut.lang.txt');
 const FILE_PATH = path.resolve(__dirname, '../csv/en.lang.csv');
 
+const keyPatternHack = /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*\-()%!"])+)(","str_end")/
+
 const CSV = {
-  keyPattern: /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*()%!]|(""))+)"/,
+  // keyPattern: /"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*()%!]|(""))+)"/,
+  keyPattern: /^"(?<key>\d+-\d+-\d+)"(,|;)"(?<value>([\w\s\\n$&+,:;=?@#|'<>.^*\-()%!"])+?)(","")$/gm,
   outputDir: 'csv_ids',
 };
 
