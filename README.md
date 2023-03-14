@@ -35,4 +35,4 @@ You just need to do a few things:
 To the Author of the modification [EsoKR](https://github.com/ESOUIMods/EsoKR) -
 [Sharlikran](https://github.com/Sharlikran), for providing development tools and information about
 how some things work  
-Подяка всім менеджерам та співробітникам платформи [Crowdin](https://crowdin.com/) за прийняття проєкту на основі Open Translate License (OTL)
+Подяка всім менеджерам та співробітникам платформи [Crowdin](https://crowdin.com/) за прийняття проєкту на основі Open Source License
