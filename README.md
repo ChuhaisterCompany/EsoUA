@@ -1,4 +1,5 @@
-# EsoUA
+# EsoUA — Ukrainian Localization Project
+![ESOUA](https://user-images.githubusercontent.com/108600378/230192616-1288574b-aa69-46f4-a0b3-3b84eb5a0ec1.jpg)
 
 **Проєкт української локалізації** — неофіційний український переклад для The Elder Scrolls Online  
 **Ukrainian Localization Project** — unofficial Ukrainian translation for The Elder Scrolls Online
