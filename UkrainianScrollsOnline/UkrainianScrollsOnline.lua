@@ -1,6 +1,6 @@
 local UkrainianScrollsOnline = {}
 UkrainianScrollsOnline.name  = "Ukrainian Scrolls Online"
-UkrainianScrollsOnline.version = "1.29"
+UkrainianScrollsOnline.version = "1.00"
 UkrainianScrollsOnline.langString = nil
 UkrainianScrollsOnline.positionning = false
 UkrainianScrollsOnline.Flags = { "en", "ua", "ut"}
@@ -18,7 +18,7 @@ UkrainianScrollsOnline.settings = UkrainianScrollsOnline.defaults
 
 local confirmDialog = {
     title = { text = zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24).." Ukrainian Scrolls Online "..zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24)},
-    mainText = { text = "Наша команда щиро вдячна вам, за те що ви встановили EsoUA! \n\nДля того, щоб активувати український переклад, тицьніть спочатку на кнопку “ESC” та зверніть увагу на правий нижній кут вашого екрана. \n\nЩоб інтерфейс користувача почав перезавантажуватись тицьніть на прапорець України! \n\n— w2unemdhysend " },
+    mainText = { text = "Безмежно дякуємо за встановлення EsoUA!\n\nУвімкнення локалізації здійснюється за допомогою прапорців, натисніть на кнопку «ESC», й у правому нижньому куті вашого екрана має з’явитись три прапорці з вибором мови (англійська, українська, українська + теґи).\n\nКлацніть на прапорець, і приємної гри!\n\n— w2unemdhysend" },
     buttons = {
         { text = SI_DIALOG_ACCEPT, callback = functionToCall},
     }
@@ -31,10 +31,7 @@ end
 
 function UkrainianScrollsOnline_ChangeLanguage(lang)
   if lang ~= GetCVar("language.2") then
-    if lang == "en" then
-      SetCVar("IgnorePatcherLanguageSetting", 0)
-    else
-      SetCVar("IgnorePatcherLanguageSetting", 1)
+    SetCVar("IgnorePatcherLanguageSetting", 0)
     end
     SetCVar("language.2", lang)
   end
