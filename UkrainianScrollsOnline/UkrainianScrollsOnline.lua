@@ -1,6 +1,6 @@
 local UkrainianScrollsOnline = {}
 UkrainianScrollsOnline.name  = "Ukrainian Scrolls Online"
-UkrainianScrollsOnline.version = "1.00"
+UkrainianScrollsOnline.version = "1.01"
 UkrainianScrollsOnline.langString = nil
 UkrainianScrollsOnline.positionning = false
 UkrainianScrollsOnline.Flags = { "en", "ua", "ut"}
@@ -30,12 +30,16 @@ if GetCVar("IgnorePatcherLanguageSetting") == "0" then
 end
 
 function UkrainianScrollsOnline_ChangeLanguage(lang)
-  if lang ~= GetCVar("language.2") then
-    SetCVar("IgnorePatcherLanguageSetting", 0)
-    end
-    SetCVar("language.2", lang)
+	if lang ~= GetCVar("language.2") then
+	  if lang == "en" then
+		SetCVar("IgnorePatcherLanguageSetting", 0)
+	  else
+		SetCVar("IgnorePatcherLanguageSetting", 0)
+	  end
+	  SetCVar("language.2", lang)
+	end
   end
-end
+
 
 function UkrainianScrollsOnline:RefreshUI()
 	local flagControl
