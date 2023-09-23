@@ -1,6 +1,7 @@
-# EsoUA
+# EsoUA — Ukrainian Localization Project
+![ESOUA](https://user-images.githubusercontent.com/108600378/230192616-1288574b-aa69-46f4-a0b3-3b84eb5a0ec1.jpg)
 
-**Проєкт української локалізації** — неофіційний Український переклад для The Elder Scrolls Online  
+**Проєкт української локалізації** — неофіційний український переклад для The Elder Scrolls Online  
 **Ukrainian Localization Project** — unofficial Ukrainian translation for The Elder Scrolls Online
 
 ## Завантажити / Download
@@ -8,19 +9,12 @@ Add-On can be downloaded **[HERE](https://www.esoui.com/downloads/info3437-EsoUA
 
 ## Опис / Description
 
-Щиро вас всіх вітаю, любі друзі! В першу чергу, ідея полягала у тому, що безліч розробників ігор не приділяють уваги до авдиторії моєї рідної країни, тому через те, що в мене є досвід, можливості, час та саме ідея, я, як гравець, вирішив з власної ініціативи та за допомогою моєї команди, перекласти гру, яка має безліч діалогів, інтерфейсу тощо.  
-Наразі розробляється переклад не тільки UI, оскільки проєкт живе понад 2 місяців, ми виходимо на новий рівень та починаємо активно (по можливості) перекладати та адаптувати власні назви, предмети, локації тощо.  
-Проєкт амбітний, тому в майбутньому він може стати повноцінним перекладом нашої улюбленої гри — _**Стародавніх Сувоїв (Online)**_.  
-Тож приєднуйтесь, будь-яка допомога була б чудовою!
+Мова оригіналу та перекладу — англійська.  
+Переглянути поступ перекладу: [Crowdin (Project)](https://crowdin.com/project/esoua)  
 
-Greetings, dear friends! First of all, the idea was that a lot of game developers don't pay  
-attention to the audience in my country, therefore, due to the fact that I have experience,  
-opportunities, time and the idea itself, I, as a player, decided on my own initiative and with the  
-help of my team, to translate the game, which has a lot of text (dialogue, interface, etc).  
-Currently, the translation of not only the UI is being developed, since the project has been alive for more than 2 months,  
-we are reaching a new level and starting to actively (if possible) translate and adapt proper nouns, items, locations, etc.  
-The project is ambitious, so in the future it can become a full-fledged translation of our favorite game — _**The Elder Scrolls Online**_.  
-So join in, any help would be great!
+Зверніть увагу, що це фанатський переклад.  
+Щоби повністю зануритися в усесвіт «Прадавніх сувоїв» українською, пропоную долучитися до перекладу, аби пришвидшити цей процес.
+Станом на зараз доступний чорновий варіант, який буде оновлюватися залежно від перекладених рядків на Crowdin.
 
 **Слава Україні!** **Glory to Ukraine!**  
 **Героям cлава!** **Glory to the Heroes!**  
@@ -33,7 +27,7 @@ If you want to help with the translation, feel free to follow the 'Crowdin', lin
 
 You just need to do a few things:
 
-1. Follow the link — [Crowdin](https://crowdin.com/project/esoua) or if there is a desire, discussions take place in this meeting of pleasant people — [Discord](https://discord.gg/34BuuCkG3n)
+1. Follow the link — [Crowdin (Invite)](https://crowdin.com/project/esoua/invite?h=45087f32289fce538567d6aafca07f251628471)    or if there is a desire, discussions take place in this meeting of pleasant people — [Discord](https://discord.gg/34BuuCkG3n)
 2. Change some (or many ;з) values.
 3. You're awesome!
 
@@ -41,4 +35,5 @@ You just need to do a few things:
 
 To the Author of the modification [EsoKR](https://github.com/ESOUIMods/EsoKR) -
 [Sharlikran](https://github.com/Sharlikran), for providing development tools and information about
-how some things work
+how some things work  
+Подяка всім менеджерам та співробітникам платформи [Crowdin](https://crowdin.com/) за прийняття проєкту на основі Open Source License
