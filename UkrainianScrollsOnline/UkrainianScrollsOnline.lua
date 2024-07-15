@@ -1,9 +1,9 @@
 local UkrainianScrollsOnline = {}
 UkrainianScrollsOnline.name  = "Ukrainian Scrolls Online"
-UkrainianScrollsOnline.version = "1.01"
+UkrainianScrollsOnline.version = "1.03"
 UkrainianScrollsOnline.langString = nil
 UkrainianScrollsOnline.positionning = false
-UkrainianScrollsOnline.Flags = { "en", "ua", "ut"}
+UkrainianScrollsOnline.Flags = { "en", "ua" }
 
 UkrainianScrollsOnline.defaults = {
 	Enable	= true,
@@ -11,7 +11,6 @@ UkrainianScrollsOnline.defaults = {
 	Flags = {
 		["en"]	= true,
 		["ua"]	= true,
-		["ut"]	= true,
 	}
 }
 UkrainianScrollsOnline.settings = UkrainianScrollsOnline.defaults
@@ -34,7 +33,7 @@ function UkrainianScrollsOnline_ChangeLanguage(lang)
 	  if lang == "en" then
 		SetCVar("IgnorePatcherLanguageSetting", 0)
 	  else
-		SetCVar("IgnorePatcherLanguageSetting", 0)
+		SetCVar("IgnorePatcherLanguageSetting", 1)
 	  end
 	  SetCVar("language.2", lang)
 	end
@@ -67,7 +66,7 @@ function UkrainianScrollsOnline:RefreshUI()
 end
 
 function UkrainianScrollsOnline_Selected()
-	local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY, anchorConstrains = UkrainianScrollsOnlineUI:GetAnchor()
+	local isValidAnchor, point, relativeTo, relativePoint, offsetX, offsetY = UkrainianScrollsOnlineUI:GetSelected()
 	if isValidAnchor then
 		UkrainianScrollsOnline.settings.anchor = { point, relativePoint, offsetX, offsetY }
 	end
