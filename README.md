@@ -5,7 +5,7 @@
 **Ukrainian Localization Project** — unofficial Ukrainian translation for The Elder Scrolls Online
 
 ## Завантажити / Download
-Add-On can be downloaded **[HERE](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)**
+Додаток із локалізацією можна завантажити (Add-On can be downloaded) **[ТУТ (HERE)](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)**
 
 ## Опис / Description
 
@@ -20,16 +20,16 @@ Add-On can be downloaded **[HERE](https://www.esoui.com/downloads/info3437-EsoUA
 **Героям cлава!** **Glory to the Heroes!**  
 ![Ukraine flag](https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1e6.png?v8)
 
-## Development
+## Розроблення / Development
 
-If you want to help with the translation, feel free to follow the 'Crowdin', link below!
+Якщо бажаєте допомогти з перекладом, то без жодних вагань переходьте за посиланням нижче на «Crowdin»! (If you want to help with the translation, feel free to follow the 'Crowdin', link below!)
 :point_right::point_left:
 
-You just need to do a few things:
+Потрібно виконати наступні кроки:
 
-1. Follow the link — [Crowdin (Invite)](https://crowdin.com/project/esoua/invite?h=45087f32289fce538567d6aafca07f251628471)    or if there is a desire, discussions take place in this meeting of pleasant people — [Discord](https://discord.gg/34BuuCkG3n)
-2. Change some (or many ;з) values.
-3. You're awesome!
+1. Перейти за посиланням із запрошенням — [Crowdin (Invite)](https://crowdin.com/project/esoua/invite?h=45087f32289fce538567d6aafca07f251628471). За підтримки моїх друзів, тут ви зможете обговорити докладніше складові перекладу, термінологію тощо — [Discord](https://discord.gg/34BuuCkG3n)
+2. Зробити декілька (або багато ;з) пропозицій перекладу.
+3. Дякуємо, ви неймовірні!
 
 ## Special thanks
 
