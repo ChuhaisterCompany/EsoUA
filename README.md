@@ -1,39 +1,22 @@
-# EsoUA — Ukrainian Localization Project
+# The Elder Scrolls Online — Неофіційна українська локалізація
 ![ESOUA](https://user-images.githubusercontent.com/108600378/230192616-1288574b-aa69-46f4-a0b3-3b84eb5a0ec1.jpg)
-
-**Проєкт української локалізації** — неофіційний український переклад для The Elder Scrolls Online  
-**Ukrainian Localization Project** — unofficial Ukrainian translation for The Elder Scrolls Online
-
-## Завантажити / Download
-Додаток із локалізацією можна завантажити (Add-On can be downloaded) **[ТУТ (HERE)](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)**
-
-## Опис / Description
-
-Мова оригіналу та перекладу — англійська.  
+## Опис
+  
+Завантажити чорновий варіант: [ESOUI (EsoUA — Ukrainian Localization)](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)  
+  
+Мова оригіналу — англійська.  
 Переглянути поступ перекладу: [Crowdin (Project)](https://crowdin.com/project/esoua)  
+  
+Це проєкт створений руками шанувальників серії «Прадавніх сувоїв». Термінологія власна, частково збігається з українським перекладом TESV: Skyrim від Кіндрата Книша та команди перекладачів. Наявна адаптація власних назв, варіант перекладу з транскрибованими назвами наразі не планується. Усесвіт дозволяє адаптувати все на власний розсуд перекладачів, що закріплено іншими офіційними перекладами на різні мови, а також менеджерами зі зв’язків зі спільнотою. 
 
-Зверніть увагу, що це фанатський переклад.  
-Щоби повністю зануритися в усесвіт «Прадавніх сувоїв» українською, пропоную долучитися до перекладу, аби пришвидшити цей процес.
-Станом на зараз доступний чорновий варіант, який буде оновлюватися залежно від перекладених рядків на Crowdin.
+Усі оновлення залежать від перекладених рядків Crowdin.
 
-**Слава Україні!** **Glory to Ukraine!**  
-**Героям cлава!** **Glory to the Heroes!**  
-![Ukraine flag](https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1e6.png?v8)
+Якщо бажаєте долучитися до перекладу, перейдіть за посиланням із запрошенням — [Crowdin (Invite)](https://crowdin.com/project/esoua/invite?h=45087f32289fce538567d6aafca07f251628471)  
+Обговорити докладніше складові перекладу, термінологію тощо — [Celestial Buddies (Discord)](https://discord.gg/34BuuCkG3n) та  [The Elder Sich (Discord)](https://discord.gg/ZzbNkNz)  
 
-## Розроблення / Development
+## Особлива подяка / Special thanks
 
-Якщо бажаєте допомогти з перекладом, то без жодних вагань переходьте за посиланням нижче на «Crowdin»! (If you want to help with the translation, feel free to follow the 'Crowdin', link below!)
-:point_right::point_left:
+Подяка всім співробітникам платформи [Crowdin](https://crowdin.com/) за прийняття проєкту на основі «Open Source License»  
 
-Потрібно виконати наступні кроки:
-
-1. Перейти за посиланням із запрошенням — [Crowdin (Invite)](https://crowdin.com/project/esoua/invite?h=45087f32289fce538567d6aafca07f251628471). За підтримки моїх друзів, тут ви зможете обговорити докладніше складові перекладу, термінологію тощо — [Discord](https://discord.gg/34BuuCkG3n)
-2. Зробити декілька (або багато ;з) пропозицій перекладу.
-3. Дякуємо, ви неймовірні!
-
-## Special thanks
-
-To the Author of the modification [EsoKR](https://github.com/ESOUIMods/EsoKR) -
-[Sharlikran](https://github.com/Sharlikran), for providing development tools and information about
-how some things work  
-Подяка всім менеджерам та співробітникам платформи [Crowdin](https://crowdin.com/) за прийняття проєкту на основі Open Source License
+A special thanks to [Sharlikran](https://github.com/Sharlikran) for providing development tools and information about how some things work.  
+![Ukraine flag](https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1e6.png?v8)  
