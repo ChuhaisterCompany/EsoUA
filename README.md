@@ -2,7 +2,7 @@
 ![ESOUA](https://user-images.githubusercontent.com/108600378/230192616-1288574b-aa69-46f4-a0b3-3b84eb5a0ec1.jpg)
 ## Опис
   
-Завантажити чорновий варіант: [ESOUI (EsoUA — Ukrainian Localization)](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalizationProject.html#info)  
+Завантажити чорновий варіант: [ESOUI (EsoUA — Ukrainian Localization)](https://www.esoui.com/downloads/info3437-EsoUAUkrainianLocalization.html)  
   
 Мова оригіналу — англійська.  
 Переглянути поступ перекладу: [Crowdin (Project)](https://crowdin.com/project/esoua)  
@@ -12,7 +12,7 @@
 Усі оновлення залежать від перекладених рядків Crowdin.
 
 Якщо бажаєте долучитися до перекладу, перейдіть за посиланням із запрошенням — [Crowdin (Invite)](https://crowdin.com/project/esoua/invite?h=45087f32289fce538567d6aafca07f251628471)  
-Обговорити докладніше складові перекладу, термінологію тощо — [Celestial Buddies (Discord)](https://discord.gg/34BuuCkG3n) та  [The Elder Sich (Discord)](https://discord.gg/ZzbNkNz)  
+Обговорити докладніше складові перекладу — [Celestial Buddies (Discord)](https://discord.gg/34BuuCkG3n) та  [The Elder Sich (Discord)](https://discord.gg/ZzbNkNz)  
 
 ## Особлива подяка / Special thanks
 
