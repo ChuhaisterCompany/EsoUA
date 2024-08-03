@@ -13,7 +13,6 @@ const generateTxtFiles = (ids) => {
       (err) => {
         if (err) {
           console.error(err.message);
-          return;
         }
       },
     );

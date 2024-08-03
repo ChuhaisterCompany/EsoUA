@@ -8,7 +8,6 @@ const writeCSV = (data) => {
   fs.writeFile(path.resolve(CSV_DIR, CSV_OUTPUT_FILE_PATH), data, (err) => {
     if (err) {
       console.error(err.message);
-      return;
     }
   });
 };
@@ -29,11 +28,7 @@ fs.readFile(path.resolve(CSV_DIR, CSV_INPUT_FILE_PATH), { encoding: 'utf8' }, (e
     if (index === 0) {
       const lineArr = line.split(/[;,]/);
 
-      if (lineArr.length <= 2) {
-        return false;
-      }
-
-      return true;
+      return lineArr.length > 2;
     }
 
     const groups = line.match(CSV.patternForUpdate)?.groups;
