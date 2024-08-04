@@ -9,10 +9,12 @@ const generateTxtFiles = require('./generateTxtFiles');
 // 1. for CSV files
 // 2. for TXT files
 
+// MARK: CSV
 const FILE_PATH = CSV_OUTPUT_FILE_PATH;
 const { keyPattern, outputDir } = CSV;
 const generateFiles = generateCsvFiles;
 
+// MARK: TXT
 // const FILE_PATH = TXT_FILE_PATH;
 // const { keyPattern, outputDir } = TXT;
 // const generateFiles = generateTxtFiles;
