@@ -1,6 +1,25 @@
 const fs = require('fs');
-const path = require('path');
 const readline = require('readline');
+
+/**
+ * Wraps a string in quotes if it is not already wrapped.
+ *
+ * @param {string} str - The string to wrap in quotes.
+ * @returns {string} The wrapped string.
+ */
+const wrapInQuotes = (str) => {
+  let wrappedStr = str;
+
+  if (!str.startsWith('"')) {
+    wrappedStr = `"${wrappedStr}`;
+  }
+
+  if (!str.endsWith('"')) {
+    wrappedStr = `${wrappedStr}"`;
+  }
+
+  return wrappedStr;
+};
 
 /**
  * Parses a CSV line and returns an array of data.
@@ -9,9 +28,9 @@ const readline = require('readline');
  * @returns {string[]} An array of data parsed from the CSV line.
  */
 const parseCSVLine = (line) => {
-  const data = line.split(/"[;,]/);
+  const data = line.split(/"[;,]"/);
 
-  return data.map((str) => (str.endsWith('"') ? str : str + '"'));
+  return data.map(wrapInQuotes);
 };
 
 /**
@@ -49,7 +68,3 @@ const readCSV = (filePath) => {
 };
 
 module.exports = readCSV;
-
-// readCSV(path.resolve(__dirname, '../Файли гри/Бойовище/246790420.csv'))
-//   .then(console.log)
-//   .catch(console.error);
