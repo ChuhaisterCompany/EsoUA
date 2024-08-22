@@ -1,33 +1,59 @@
-[LocalizedFileNames]
-18173141.csv=@18173141.csv,0
-38727365.csv=@38727365.csv,0
-39619172.csv=@39619172.csv,0
-51188213.csv=@51188213.csv,0
-68494373.csv=@68494373.csv,0
-73074773.csv=@73074773.csv,0
-77659573.csv=@77659573.csv,0
-87370069.csv=@87370069.csv,0
-96962005.csv=@96962005.csv,0
-98383029.csv=@98383029.csv,0
-124119973.csv=@124119973.csv,0
-124318053.csv=@124318053.csv,0
-124362421.csv=@124362421.csv,0
-135729940.csv=@135729940.csv,0
-139139780.csv=@139139780.csv,0
-143811061.csv=@143811061.csv,0
-148042590.csv=@148042590.csv,0
-151600453.csv=@151600453.csv,0
-161754069.csv=@161754069.csv,0
-162144901.csv=@162144901.csv,0
-200697509.csv=@200697509.csv,0
-207758933.csv=@207758933.csv,0
-208337109.csv=@208337109.csv,0
-217370677.csv=@217370677.csv,0
-219936053.csv=@219936053.csv,0
-241484741.csv=@241484741.csv,0
-242841733.csv=@242841733.csv,0
-244251267.csv=@244251267.csv,0
-257983733.csv=@257983733.csv,0
-263796174.csv=@263796174.csv,0
-267697733.csv=@267697733.csv,0
-
+"Location";"Source"
+"41262789-0-1";"Furnishings"
+"41262789-0-2";"Artwork"
+"41262789-0-3";"Trifles and Ornaments"
+"41262789-0-4";"Games"
+"41262789-0-5";"Musical Instruments"
+"41262789-0-6";"Wall Décor"
+"41262789-0-7";"Children's Toys"
+"41262789-0-8";"Maps"
+"41262789-0-9";"Ritual Objects"
+"41262789-0-10";"Devices"
+"41262789-0-11";"Lights"
+"41262789-0-12";"Scrivener Supplies"
+"41262789-0-13";"Cosmetics"
+"41262789-0-14";"Dry Goods"
+"41262789-0-15";"Dolls"
+"41262789-0-16";"Magic Curiosities"
+"41262789-0-17";"Medical Supplies"
+"41262789-0-18";"Drinkware"
+"41262789-0-19";"Statues"
+"41262789-0-20";"Smithing Equipment"
+"41262789-0-21";"Utensils"
+"41262789-0-22";"Fishing Supplies"
+"41262789-0-23";"Grooming Items"
+"41262789-0-24";"Wardrobe Accessories"
+"41262789-0-25";"Dishes and Cookware"
+"41262789-0-26";"Tools"
+"41262789-0-27";"Writings"
+"41262789-0-28";"Oddities"
+"41262789-0-30";"Relic"
+"41262789-0-33";"Unknown Item"
+"41262789-0-35";"Treasure Vault Shard"
+"41262789-0-36";"Light"
+"41262789-0-37";"Interactable"
+"41262789-0-38";"Sittable"
+"41262789-0-39";"Animated"
+"41262789-0-40";"Crafting Station"
+"41262789-0-41";"Readable"
+"41262789-0-42";"Target Dummies"
+"41262789-0-44";"Audible"
+"41262789-0-45";"Auto-Revives"
+"41262789-0-46";"Creature"
+"41262789-0-48";"Visual FX"
+"41262789-0-62";"Justice"
+"41262789-0-73";"Trap"
+"41262789-0-74";"Houseguest"
+"41262789-0-75";"Houseguest, Talkative"
+"41262789-0-76";"Cheese"
+"41262789-0-77";"Alcoholic Drink"
+"41262789-0-78";"Companion Houseguest"
+"41262789-0-80";"Sweets"
+"41262789-0-81";"Canine"
+"41262789-0-83";"Tribute"
+"41262789-0-84";"Scrivener's Hall Vault Key"
+"41262789-0-85";"Tea"
+"41262789-0-86";"Coffee"
+"41262789-0-87";"Monster Trophy"
+"41262789-0-88";"Trophy Fish"
+"41262789-0-89";"Wine"
