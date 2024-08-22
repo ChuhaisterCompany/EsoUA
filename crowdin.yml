@@ -1,0 +1,5 @@
+files:
+  - source: /txt for gamedata/csv/Файли гри/
+    translation: /translations/%two_letters_code%/uk.lang.csv
+    first_line_contains_header: 1
+    scheme: 'identifier,source_or_translation'
