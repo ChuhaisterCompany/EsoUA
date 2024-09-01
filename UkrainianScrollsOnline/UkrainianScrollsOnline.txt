@@ -1,8 +1,8 @@
 ## Title: Ukrainian Scrolls Online
 ## Author: w2unemdhysend
-## APIVersion: 101041 101042
-## Version: 1.04
-## AddOnVersion: 104
+## APIVersion: 101043
+## Version: 1.05
+## AddOnVersion: 105
 ## Description: Неофіційна українська локалізація «The Elder Scrolls Online»
 ## SavedVariables: UkrainianScrollsOnline_settings
 
