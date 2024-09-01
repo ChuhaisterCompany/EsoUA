@@ -1,6 +1,6 @@
 local UkrainianScrollsOnline = {}
 UkrainianScrollsOnline.name  = "Ukrainian Scrolls Online"
-UkrainianScrollsOnline.version = "1.04"
+UkrainianScrollsOnline.version = "1.05"
 UkrainianScrollsOnline.langString = nil
 UkrainianScrollsOnline.positionning = false
 UkrainianScrollsOnline.Flags = { "en", "ua" }
@@ -17,7 +17,7 @@ UkrainianScrollsOnline.settings = UkrainianScrollsOnline.defaults
 
 local confirmDialog = {
     title = { text = zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24).." Ukrainian Scrolls Online "..zo_iconFormat("UkrainianScrollsOnline/images/".."es.dds", 24, 24)},
-    mainText = { text = "Безмежно дякуємо за встановлення EsoUA!\n\nУвімкнення локалізації здійснюється за допомогою прапорців, натисніть на кнопку «ESC», у правому нижньому куті вашого екрана має з’явитись два прапорці з вибором мови (англійська, українська).\n\nКлацніть на прапорець, і приємної гри!\n\n— w2unemdhysend" },
+    mainText = { text = "Безмежно дякуємо за встановлення «EsoUA»!\n\nУвімкнути локалізацію можна за допомогою прапорців, натисніть на кнопку «ESC», у правому нижньому куті вашого екрана мають з’явитись два прапорці з вибором мови (англійська, українська).\n\nКлацніть на прапорець, і приємної гри!\n\n— w2unemdhysend" },
     buttons = {
         { text = SI_DIALOG_ACCEPT, callback = functionToCall},
     }

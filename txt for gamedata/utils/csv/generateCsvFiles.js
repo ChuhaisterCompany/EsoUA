@@ -12,7 +12,6 @@ const generateCsvFiles = (ids) => {
       (err) => {
         if (err) {
           console.error(err.message);
-          return;
         }
       },
     );
